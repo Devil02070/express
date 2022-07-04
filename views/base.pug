@@ -1,0 +1,30 @@
+//- base.pug  in base all other templates content extend
+doctype html 
+html
+  head
+    title Elevated
+    block style 
+      style 
+        include ../static/style.css
+        include ../static/bootstrap/css/bootstrap.min.css
+  body
+
+    //- header(navigation)
+    div.container-fluid.bg-dark
+      nav#navbar.navigation.container.bg-dark.text-center
+        ul.d-flex 
+          li.ms-5 #[a(href="/home") Home] 
+          li.ms-5 #[a(href="/about") About] 
+          li.ms-5 #[a(href="/services") Services]
+          li.ms-5 #[a(href="/contact") Contact]
+    //- other templates content
+    block content
+
+    //- script
+    block scripts
+      script(src='../static/main.js')
+
+    //- footer
+    block foot
+      #footer.bg-dark.text-center.p-3 
+        p.text-white @ Copyright 2022

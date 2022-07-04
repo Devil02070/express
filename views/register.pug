@@ -1,0 +1,11 @@
+extends base.pug
+
+block content 
+    section#reg.px-5.container.text-center.py-5.bg-light.w-100
+        div.row.py-5
+            h2 Rgister:- 
+            form(action="" method="post" class="w-50 m-auto") 
+                input(type="text" name="name" placeholder="Name" class="form-control mt-3")
+                input(type="text" name="email" placeholder="Email" class="form-control mt-3")
+                input(type="text" name="password" placeholder="password" class="form-control mt-3")
+                input(type="submit" name="reg" value="Register" class="form-control mt-3 w-50 m-auto bg-primary text-white") 

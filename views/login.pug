@@ -1,0 +1,15 @@
+extends base.pug
+
+block content 
+    section#login.text-center.py-5.bg-light.login-section
+        .row.text-center 
+            h3.text-white Login:
+        div.row.py-5.w-100
+            form(action="" method="post" id="login" class="w-25 m-auto")
+                input(type="email" name="email" placeholder="Email" class="form-control mt-3 text-center py-2")
+                input(type="text" name="password" placeholder="Password" class="form-control mt-3 text-center py-2") 
+                input(type="submit" value="Login" name="user_login" class="form-control mt-3 bg-primary w-50 m-auto text-white py-2")
+                .row 
+                    button.btn.mt-3.bg-success.w-25.m-auto 
+                        a(href="/register" class="text-white py-2 text-decoration-none") Sign up
+                    a(href="") Forgot password 
